@@ -42,6 +42,10 @@
         animation: animate 1.3s infinite;
       }
 
+      .center-text{
+        animation: animate 1.3s infinite;
+      }
+
       #pinkboard:before,
       #pinkboard:after {
         content: "";
@@ -309,6 +313,7 @@
             point = to(t);
             context.lineTo(point.x, point.y);
           }
+          context.textContent = "1"
           context.closePath();
           // create the fill
           // context.fillStyle = '#FF5CA4';
@@ -372,7 +377,7 @@
         background-color: rgb(0, 0, 0);
         width: 100%;
         color: rgb(225, 12, 168);
-        height: 100%;
+        height: auto;
         font-size: 31px;
         font-style: italic;
         display: flex;
@@ -382,7 +387,7 @@
         text-align: center;
       "
     >
-      Love you
+      
     </div>
     <script>
         var text = () => prompt("Nhập gì đó đi: ")
